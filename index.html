@@ -305,7 +305,8 @@
 
     .skills-layout,
     .project-grid,
-    .approach-grid {
+    .approach-grid,
+    .sample-grid {
       display: grid;
       gap: 22px;
     }
@@ -384,12 +385,14 @@
       box-shadow: 0 0 0 6px rgba(34, 211, 238, 0.1);
     }
 
-    .timeline-content ul {
+    .timeline-content ul,
+    .sample-card ul {
       margin: 18px 0 0;
       padding-left: 18px;
     }
 
-    .timeline-content li {
+    .timeline-content li,
+    .sample-card li {
       margin-bottom: 12px;
       color: var(--muted);
       line-height: 1.8;
@@ -414,15 +417,18 @@
       white-space: nowrap;
     }
 
-    .project-grid {
+    .project-grid,
+    .sample-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
       min-height: 260px;
     }
 
-    .project-label {
+    .project-label,
+    .sample-label {
       margin: 0 0 10px;
       color: var(--accent);
       font-size: 0.84rem;
@@ -431,11 +437,13 @@
       font-weight: 700;
     }
 
-    .project-card h3 {
+    .project-card h3,
+    .sample-card h3 {
       margin-bottom: 14px;
     }
 
-    .project-card p {
+    .project-card p,
+    .sample-card p {
       margin-bottom: 18px;
     }
 
@@ -493,7 +501,8 @@
       .about-grid,
       .skills-layout,
       .project-grid,
-      .approach-grid {
+      .approach-grid,
+      .sample-grid {
         grid-template-columns: 1fr;
       }
 
@@ -565,6 +574,7 @@
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#portfolio">Portfolio</a>
+          <a href="#samples">Example Guides</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -816,6 +826,77 @@
               <strong>Impact:</strong>
               <span>Reduced review cycles by 15-20% and documentation turnaround time by 20%.</span>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="samples" class="section">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">Example Guides</p>
+          <h2>Sample documentation formats I create</h2>
+          <p class="section-subtitle">
+            Representative examples showing how I structure API documentation, user guides, and FAQ content for technical audiences.
+          </p>
+        </div>
+
+        <div class="sample-grid">
+          <article class="sample-card card">
+            <p class="sample-label">API Documentation</p>
+            <h3>Authentication API Guide</h3>
+            <p>
+              A developer-focused guide covering endpoint purpose, request structure, authentication method,
+              sample responses, error handling, and integration notes.
+            </p>
+            <ul>
+              <li>Endpoint overview and expected request flow</li>
+              <li>Headers, parameters, and sample payloads</li>
+              <li>Success and error response examples</li>
+              <li>Usage notes for developers and integrators</li>
+            </ul>
+          </article>
+
+          <article class="sample-card card">
+            <p class="sample-label">User Guide</p>
+            <h3>Network Configuration User Guide</h3>
+            <p>
+              A task-based guide designed to help end users configure, validate, and troubleshoot product setup with clear step-by-step instructions.
+            </p>
+            <ul>
+              <li>Getting started prerequisites and setup requirements</li>
+              <li>Step-by-step configuration workflow</li>
+              <li>Screens, diagrams, and validation checkpoints</li>
+              <li>Troubleshooting notes for common user issues</li>
+            </ul>
+          </article>
+
+          <article class="sample-card card">
+            <p class="sample-label">FAQ Documentation</p>
+            <h3>Product Support FAQ</h3>
+            <p>
+              A concise knowledge-base style FAQ that addresses common product questions, recurring support issues, and user-facing resolutions.
+            </p>
+            <ul>
+              <li>Answers to common setup and access questions</li>
+              <li>Known issues and recommended resolutions</li>
+              <li>Short, scannable content for quick problem-solving</li>
+              <li>Structured format suitable for support portals</li>
+            </ul>
+          </article>
+
+          <article class="sample-card card">
+            <p class="sample-label">Documentation Strategy</p>
+            <h3>Structured Content Framework</h3>
+            <p>
+              A reusable content model showing how modular writing, DITA/XML structure, and information architecture improve consistency across documentation sets.
+            </p>
+            <ul>
+              <li>Reusable topic-based content structure</li>
+              <li>Consistent taxonomy and navigation approach</li>
+              <li>Support for multi-release documentation reuse</li>
+              <li>Improved maintainability and review efficiency</li>
+            </ul>
           </article>
         </div>
       </div>
